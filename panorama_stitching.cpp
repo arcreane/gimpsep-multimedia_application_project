@@ -11,7 +11,9 @@ Stitcher::Mode mode = Stitcher::PANORAMA;
 
 
 int main() {
-    string path = "/home/mollier/Téléchargements/panorama/";
+    string path;
+    cout << "Entrez le chemin ou trouver les images" << endl;
+    cin >> path;
 
     vector<string> listLinkImage;
     vector<Mat3b> listImage;
