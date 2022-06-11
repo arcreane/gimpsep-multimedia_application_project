@@ -53,7 +53,7 @@ int main(int argc, char** argv)
 {
     //![load]
     CommandLineParser parser(argc, argv, "{@input | fruits.jpg | input image}");
-    src = imread("C:/Users/41786/Desktop/BradPitt.jpg"); // Load an image
+    src = imread("C:\\Users\\yanns\\Desktop\\mark.jpg"); // Load an image
 
     if (src.empty())
     {

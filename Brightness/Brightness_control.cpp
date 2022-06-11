@@ -30,7 +30,7 @@ int main( int argc, char** argv )
     /*< Simple contrast control */
     /*< Simple brightness control */
     //reading the image and creating a new image matrix
-	image = imread("eco.jpg", IMREAD_COLOR);
+	image = imread("D:\\Projets\\Multimedia\\gimpsep-multimedia_application_project\\Brightness\\eco.jpg", IMREAD_COLOR);
     
 	if(!image.data )//If no image
 	{
@@ -43,8 +43,8 @@ int main( int argc, char** argv )
     //create windows
     namedWindow("Source", WINDOW_AUTOSIZE);
 	namedWindow("Output", WINDOW_AUTOSIZE);
-	
-	
+
+
     //show original and new image
 	imshow("Source", image);
 	 

@@ -30,7 +30,7 @@ int main( int argc, char** argv )
   //src = imread( parser.get<String>( "@input" ), IMREAD_COLOR );
 
   //Read the image
-  src = imread("/Users/christopher/Downloads/eco.jpg");
+  src = imread("D:\\Projets\\Multimedia\\gimpsep-multimedia_application_project\\Resize\\Happyfish.jpg");
     
   //If there is no image or we cannot open the image
   if( src.empty() )

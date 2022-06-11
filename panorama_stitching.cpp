@@ -24,7 +24,7 @@ int main() {
 
     Mat result;
 
-    for (const auto & file : directory_iterator(path)) {listLinkImage.push_back(file.path());}
+    for (auto const &file : directory_iterator(path)) {listLinkImage.push_back(file.path().string());}
 
     for (auto const &i : listLinkImage) {listImage.emplace_back(imread(i));}
 

@@ -1,2 +1,5 @@
 **/*.exe
 *.exe
+/.idea/
+CMakeLists.txt
+/cmake-build-debug/
