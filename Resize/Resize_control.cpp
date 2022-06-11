@@ -17,7 +17,7 @@ static void scale_on_trackbar( int, void* ){
    scaling_factor = (double) scale_slider/100;
    
    dsize = Size(0,0);
-   resize(source, new_image, dsize, scaling_factor, scaling_factor, INTER_LINEAR),
+   resize(source, new_image, dsize, scaling_factor, scaling_factor, INTER_LINEAR);
   
    imshow("Output", new_image);
    
@@ -129,7 +129,7 @@ static void create_dimensional_window(){
 
 static int initialize(){
 	// Read source image
-	source = imread("Happyfish.jpg", IMREAD_COLOR);
+	source = imread("D:\\Projets\\Multimedia\\gimpsep-multimedia_application_project\\Resize\\Happyfish.jpg", IMREAD_COLOR);
 	if(!source.data )
 	{
 		printf( " No image data \n " );
