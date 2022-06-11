@@ -96,6 +96,7 @@ int MultimediaProject::draw_main_menu() {
         if(k== 99) { //if 'c' is pressed
             // Another way of cloning, clear all changes
             dummy.copyTo(current_image);
+            imshow("Current Image", current_image);
             cout << "All changes cleared!" << endl;
         } else if (k == 115){//if 's' is pressed, save image on disk
             imwrite("output.jpg", current_image);
@@ -139,11 +140,12 @@ void MultimediaProject::input_menu(const String& function_name) {
         if(k== 99) { //if 'c' is pressed
             // Another way of cloning, clear all changes
             dummy.copyTo(current_image);
+            imshow("Current Image", current_image);
             cout << "All changes cleared!" << endl;
         } else if (k == 118){//if 'v'' is pressed
             modified_image.copyTo(current_image);
             cout << "Change applied!" << endl;
-            imshow("Current Image", current_image);//Display the output in a window
+            imshow("Current Image", current_image);
         } else if (k == 115){//if 's' is pressed, save image on disk
             imwrite("output.jpg", current_image);
             cout << "Saved the output image on disk!" << endl;
